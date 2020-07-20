@@ -1,0 +1,11 @@
+
+<div class="h-100 w-25">
+    <div class="bg-warning h-100 w-75 d-flex flex-column justify-content-start align-items-center">
+        <% for(list of lists) { %>
+            <a href='/list/<%= list.id %>' class="py-4 w-100 my-2 bg-primary text-white text-center"><%= list.title %> </a>
+        <% } %>
+        <a href='/new' type="button" class="py-4 w-100 my-2 bg-primary text-white text-center" data-toggle="modal" data-target="#exampleModal">
+            Create new List.
+        </button>
+    </div>
+</div>
